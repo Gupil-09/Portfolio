@@ -10,7 +10,7 @@
         {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            background: linear-gradient(135deg, #9fd9ff, #eab4ff);
+            background-color: rgb(155, 153, 153);
         }
         header 
         {
@@ -24,16 +24,36 @@
         {
             margin-bottom: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            background: linear-gradient(135deg, #eab4ff, #9fd9ff);
+            background-color: rgb(202, 202, 202);
+            border-radius: 20px;
             transition: 0.5s;
+        }
+        .card button 
+        {
+            border-radius: 15px;
         }
         .card:hover 
         {
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            background-color: rgba(97, 97, 97, 0.5);
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
         }
         .navbar-nav .nav-link.active 
         {
             font-weight: bold;
+        }
+        #about 
+        {
+            background-color: rgb(202, 202, 202);
+            padding: 20px;
+            margin-top: 70px;
+            border-radius: 20px;
+        }
+        #about img 
+        {
+            margin-left: 95%;
+            width: 70px;
         }
     </style>
 </head>
@@ -55,17 +75,26 @@
     </header>
     <main class="container mt-5 pt-5">
         <section id="about">
-            <h2>About Me</h2>
-            <p>Brief introduction about yourself</p>
+            <img src="https://www.pngplay.com/wp-content/uploads/12/User-Avatar-Profile-Transparent-Clip-Art-Background.png">
+            <h1>About Me</h1>
+            <p>My name is Gupil, I am a 2nd year (3rd sem) student at Chitkara Uinversity.</p>
+            <h4>Programming Languages that I am fluent in :</h4>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>C</li>
+                <li>C++</li>
         </section>
         <section id="projects" class="mt-5">
-            <h2>My Projects</h2>
+            <h1>My Projects</h1>
             <div class="row">
                 <div class="col-md-6">
                     <div class="card">
                         <img src="https://png.pngtree.com/png-vector/20220706/ourmid/pngtree-project-management-png-image_5687733.png" class="card-img-top" alt="Project 1">
                         <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
+                            <h3 class="card-title">Project 1</h3>
                             <p class="card-text">Description of Project 1</p>
                             <button class="btn btn-primary view-details">View Details</button>
                         </div>
@@ -75,7 +104,7 @@
                     <div class="card">
                         <img src="https://png.pngtree.com/png-vector/20220706/ourmid/pngtree-project-management-png-image_5687733.png" class="card-img-top" alt="Project 2">
                         <div class="card-body">
-                            <h5 class="card-title">Project 2</h5>
+                            <h3 class="card-title">Project 2</h3>
                             <p class="card-text">Description of Project 2</p>
                             <button class="btn btn-primary view-details">View Details</button>
                         </div>
@@ -85,7 +114,7 @@
                     <div class="card">
                         <img src="https://png.pngtree.com/png-vector/20220706/ourmid/pngtree-project-management-png-image_5687733.png" class="card-img-top" alt="Project 3">
                         <div class="card-body">
-                            <h5 class="card-title">Project 3</h5>
+                            <h3 class="card-title">Project 3</h3>
                             <p class="card-text">Description of Project 3</p>
                             <button class="btn btn-primary view-details">View Details</button>
                         </div>
@@ -95,7 +124,7 @@
                     <div class="card">
                         <img src="https://png.pngtree.com/png-vector/20220706/ourmid/pngtree-project-management-png-image_5687733.png" class="card-img-top" alt="Project 4">
                         <div class="card-body">
-                            <h5 class="card-title">Project 4</h5>
+                            <h3 class="card-title">Project 4</h3>
                             <p class="card-text">Description of Project 4</p>
                             <button class="btn btn-primary view-details">View Details</button>
                         </div>
@@ -104,7 +133,7 @@
             </div>
         </section>
         <section id="contact" class="mt-5">
-            <h2>Contact Me</h2>
+            <h1>Contact Me</h1>
             <form id="contactForm">
                 <div class="form-group">
                     <label for="name">Name</label>
